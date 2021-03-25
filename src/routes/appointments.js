@@ -23,7 +23,7 @@ module.exports = (db, updateAppointment) => {
           {}
         )
       );
-    });
+    }).catch(error => console.log(error));
   });
 
   router.put("/appointments/:id", (request, response) => {
